@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="Thời gian gọi (s)"></label>
+    <button type="button" id="button">Tính cước phí</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value);
+            let result = document.getElementById("result");
+            
+            let cost = (88 + (a - 6) * 14.67);
+            
+            result.innerHTML = "Cước phí cuộc gọi: " + cost;
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="Enter age"></label>
+    <button type="button" id="button">Check</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value);
+            let result = document.getElementById("result")
+            if (a >= 13)
+                result.innerHTML = "Can go to high school";
+            else
+                result.innerHTML = "Not old enough";
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>

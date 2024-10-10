@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="Enter a"></label>
+    <label><input type="number" id="input2" placeholder="Enter b"></label>
+    <button type="button" id="button">Check if remain</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value);
+            let b = parseInt(document.getElementById("input2").value);
+            let result = document.getElementById("result")
+            if (a % b === 0)
+                result.innerHTML = "No remain";
+            else
+                result.innerHTML = "Remain " + (a%b);
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>

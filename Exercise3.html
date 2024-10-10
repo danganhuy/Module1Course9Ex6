@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <label><input type="number" id="input1" placeholder="Enter random number"></label>
+    <button type="button" id="button">Check</button>
+    <div id="result"></div>
+    <script>
+        function Remain() {
+            let a = parseInt(document.getElementById("input1").value);
+            let result = document.getElementById("result")
+            if (a > 0)
+                result.innerHTML = a + " is greater than 0";
+            else if (a < 0)
+                result.innerHTML = a + " is lesser than 0";
+            else
+                result.innerHTML = a + " is equal to 0"
+        }
+        document.getElementById("button").addEventListener("click", Remain);
+    </script>
+</body>
+</html>
